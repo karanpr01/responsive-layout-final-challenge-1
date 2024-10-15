@@ -5,9 +5,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
 }
 .contant{
     max-width: 1128px;
+    width: 100%;
 }
 .hero_section{
     font-family: "Roboto", sans-serif;
@@ -32,12 +34,12 @@
     min-height: 660px;
 }
 .flexbox{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
     font-family: "Roboto", sans-serif;
     font-size: 1.313rem;
-    margin: 16px;
+    padding: 16px;
   
 }
 .section_two > h2{
@@ -60,4 +62,22 @@ img{
 .sec-four{
     background-color: #824936;
     margin-top: 10px;
+}
+@media (min-width: 600px) {
+   .flexbox{
+    display: flex;
+   }
+   .sectiontext{
+    padding: 18px;
+   }
+    
+}
+@media (min-width: 1128px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: red; */
+        flex-direction: column;
+    }
 }
